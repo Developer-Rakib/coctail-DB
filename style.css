@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #d63384;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.header {
+    color: var(--primary-color);
+}
+
+#input-feild {
+    width: 70%;
+}
+
+#search-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+#coctails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#coctails div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 25px 0;
+    border-radius: 15px;
+    width: 291px;
+    height: 365px;
+}
+
+#coctails img {
+    width: 275px;
+    border-radius: 10px;
+}
+
+#coctails h5 {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    margin-top: 13px;
+}
+
+#coctails p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: gray;
+}
+
+#coctail {
+    display: flex;
+    justify-content: center;
+}
+
+#coctail div {
+    width: 90%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+}
+
+#coctail img {
+    width: 200px;
+}
+
+#coctail h3 {
+    font-size: 25px;
+    margin: 11px 0;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+#coctail p {
+    margin-bottom: 7px;
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+}
+
+#loading {
+    display: none;
+    font-size: 35px;
+    text-align: center;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #14613d;
+    border-color: #14613d transparent #14613d transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width : 600px) {
+    #input-feild {
+        width: 60%;
+        height: 33px;
+        font-size: 14px;
+    }
+
+    #search-btn {
+        padding: 4px 6px;
+        font-size: 14px;
+    }
+
+    .available-data {
+        font-size: 12px;
+    }
+
+
+
+
+
+    #coctails h4 {
+        font-size: 21px;
+    }
+
+    #coctails p {
+        font-size: 14px;
+    }
+
+    #coctail div {
+        width: 89%;
+    }
+
+    #coctail img {
+        width: 125px;
+    }
+
+    #coctail h3 {
+        font-size: 20px;
+    }
+
+    #coctail p {
+        margin-bottom: 4px;
+        font-size: 13px;
+    }
+
+    .available-data {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px 0;
+        color: gray;
+    }
+
+    #coctails div {
+        width: 260px;
+        height: 350px;
+    }
+
+    #coctails img {
+        width: 244px;
+    }
+
+}
